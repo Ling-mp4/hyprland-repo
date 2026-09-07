@@ -1,0 +1,10 @@
+# Machine-specific configs
+monitors.conf
+nvidia.conf
+systemd/
+*.log
+
+# Temporary files
+*.swp
+*.tmp
+
