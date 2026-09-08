@@ -23,9 +23,17 @@ end
 --
 -- Adding a keybind:
 --
---     hl.bind("SUPER + SPACE", hl.dsp.exec_cmd(hyde.sh.gamelauncher()), {
---         description = "[Utilities] game launcher",
---     })
+
+input = {
+	mouse_sensitivity = -0.5,
+}
+
+--	hl.bind("F23", hl.dsp.exec_cmd(
+--	    "wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle && notify-send 'Microphone' \"$(wpctl get-volume @DEFAULT_AUDIO_SOURCE@)\""
+--	), {
+--   	description = "[Audio] mute microphone",
+--	})
+
 --
 -- Replacing one of HyDE's: bind the same combination again and yours takes
 -- over, but copy its flags across as well. A bind counts as the same one only
@@ -41,4 +49,4 @@ end
 -- Press SUPER + / to see what is actually loaded, your own binds included.
 -- The full reference is KEYBINDINGS.md in the HyDE repository.
 --
--- Other Lua files next to this one can be pulled in with require("name").
+-- Other Lua files next to this one can be pulled in with require("name")
